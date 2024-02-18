@@ -154,8 +154,245 @@ UX 의 중요성에 대해 알게 되었다
 
 \- 조수현 :
 
+
+
 4개월간의 학습을 토대로 처음으로 장고로 모델을 구성하고 데이터를 받아와서 뷰에서 화면을 구성하는 완성된 프로젝트를 만들어봤습니다. 관통 프로젝트를 진행하면서 시간이 부족하다는 느낌과 완성이 아직 미흡하다는 아쉬움을 느꼈지만, 다양한 기능을 추가하고 화면을 구성하는 것이 신기하게 느껴졌습니다.
 프로젝트 진행 중에는 머지 과정에서 데이터 손실이 발생하거나 로직을 구성하다가 에러에 마주치고, 데이터가 수정되지 않아 모델과 시리얼라이저를 다시 고쳐야 했던 어려움도 있었습니다. 하지만 이러한 어려움을 해결하는 방법을 찾아가며 여러 경험을 쌓을 수 있었습니다.
 팀원들과의 협업을 통해 프로젝트를 완성해 나가는 경험도 중요하게 느껴졌습니다. 힘들 때마다 팀원들이 용기를 북돋아주어 프로젝트를 마무리할 수 있었습니다.
 깃 사용법의 중요성과 커밋 메시지 작성의 중요성을 깨달았습니다. 또한, 프로젝트를 진행하기 위해서는 지식의 확장이 필요하다는 것을 깨달아 더 많은 공부가 필요하다는 느낌을 받았습니다.
 이번 프로젝트를 통해 얻은 경험과 깨달음을 바탕으로 2학기에는 더 풍부하고 완성도 높은 프로젝트를 선보이고 싶습니다.
+
+# 🌷 나행시 - 내 손안의 금융, 나만의 행운이 시작. 웹앱기반 금융상품 추천 서비스
+
+
+## 💜 프로젝트 진행 기간
+2023.11.16 ~ 2023.11.23 (8일간 진행)  
+
+</br>
+
+## 🎵 나행시 - 개요
+나행시 프로젝트는 스마트폰 이용자들을 위한 웹앱 기반의 서비스입니다.
+
+가장 높은 이자율의 예적금 금융 상품을 빠르게 찾고 싶을 때, 간단하게 환율을 계산하고 싶을 때, 스마트폰으로 내 주변의 가까운 은행을 알고싶을 때,
+
+복잡한 절차 없이 스마트폰과 나행시를 활용하여 빠르게 이용 할 수 있습니다.
+
+</br>
+
+## 💜 주요 기능
+---
+- ### 예적금 상품 비교
+    - 제1금융권을 기준으로 다양한 은행의 예적금 상품을 확인 할 수 있습니다.
+    - 스마트폰의 작은 화면과 UX를 고려하여 가장 중요한 금리를 최우선적으로 확인 할 수 있도록 하였습니다.
+    - 최고금리순, 기본금리순으로 정렬 할 수 있으며, 기간별, 은행별로 필터링하여 원하는 상품만을 확인 할 수 있습니다.
+    - 상품의 유형에 따라 가입제한, 방문제한을 손쉽게 확인할 수 있습니다.
+    - 상품 찜하기 버튼을 통해 즐겨찾기에 상품을 등록할 수 있습니다.
+    - 금융상품의 상세페이지에서 해당 상품의 모든 기간별 금리를 확인 할 수 있습니다.
+    
+    <br/>
+- ### 주변 은행 검색
+    - kakao map API를 기반으로 주변 은행 검색 기능을 구현하였습니다.
+    - 시, 도, 구를 선택하여 원하는 위치의 주변 은행을 검색 할 수 있습니다.
+    - 검색 결과로 나오는 은행의 위치를 파란색 핀으로 빠르게 확인 할 수 있습니다.
+    - 핀을 클릭 시, 해당 은행의 이름을 확인 할 수 있습니다.
+    <br/>
+- ### 환율 계산기
+    - 스마트폰 이용을 고려햐여 간편하고 빠른 환율 계산기 기능을 구현하였습니다.
+    - 원하는 나라와 매매 기준을 선택하고 금액을 입력하여 환율을 확인 할 수 있습니다.
+    <br/>
+- ### 예적금 정보 공유 게시판
+    - 이용자들의 다양한 정보공유를 돕기위해 게시판 기능을 구현하였습니다.
+    - 스마트폰 이용을 고려하여 글쓰기 버튼은 하단에 고정하여 언제든지 글을 작성할 수 있습니다.
+    - 댓글을 통해 언제든지 다른 이용자와 소통 할 수 있습니다.
+    <br/>
+    
+</br>
+
+## ✔ 주요 기술
+---
+
+**Backend**
+- Ptyhon 3.9.12
+- Django 4.2.4
+- dj-rest-auth 5.0.2
+- django-allauth 0.58.2
+- SQLite
+
+**Frontend**
+- node 20.10.0
+- vue 3.3.4
+- pinia 2.1.7
+- vuetify 3.4.3
+- vue-router 4.2.5
+- vite 4.4.11
+
+## ✔ 협업 툴
+---
+- Git
+- Notion
+- MatterMost
+
+
+## ✔ 팀원 역할 분배
+---
+![역할 배분](https://user-images.githubusercontent.com/55949647/154541550-b52932b4-9e3d-4788-9994-98dd7fe8c875.png)
+
+
+## 🎵 TUPLI 서비스 화면
+---
+
+### 회원가입 절차
+- 이용약관에 동의하지 않으면 진행할 수 없습니다.
+- 아이디(이메일)은 타 사용자의 아이디와 중복될 수 없습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587535-8e1656c9-53fa-433e-ac22-efc1963b21a7.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587545-22a4a70f-8cac-4772-a6e5-29c55ff0409b.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587551-b31f46b9-8f39-42ed-8c38-282734224762.gif"/>
+
+<br>
+
+### 메인화면
+- 최신순으로 업로드된 플레이리스트 or 플레이룸 or 게시글 정보를 로드합니다.
+- 무한스크롤이 적용됩니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587375-cfef4162-d404-41fd-9d28-39712f2cf5b1.gif"/>
+
+<br>
+
+### 플레이리스트 생성
+- 제목, 소개글, 태그를 작성합니다.
+- 플레이리스트에 담을 영상을 검색해서 추가할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587487-fc0e71b1-507c-4c66-b906-d583f530f139.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587499-da47e90b-c9ae-478f-8942-c4afde9aa4b2.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587504-8e596650-49dd-4ffc-81ae-a2e384527fdc.gif"/>
+
+<br>
+
+### 플레이리스트 이용하기
+- 업로드된 플레이리스트로 이동하여 영상을 시청합니다.
+- 플레이리스트에 좋아요와 댓글을 남길 수 있습니다.
+- 해당 플레이리스트의 정보로 플레이룸을 만들 수 있습니다.
+- 업로드한 당사자는 플레이리스트를 삭제하거나 수정할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587515-0ebaf6f4-a87f-474c-946c-dee20bed0476.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587529-b2be3b77-4b18-48d8-910e-89235409fc82.gif"/>
+
+<br>
+
+### 프로필 탐색
+- 자신의 프로필 정보 페이지에서 팔로워와 팔로잉한 사용자 목록을 볼 수 있습니다.
+- 타인의 프로필으로 이동하여 좋아요 할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587432-39f947e4-988d-47e7-adb4-dedcfbb95c1a.gif"/>
+
+<br>
+
+### 실시간 알림
+- 타인이 자신에게 팔로우를 걸었을 때 튜플리를 이용중이라면 실시간 알림을 받을 수 있습니다.
+- 플레이룸에 초대되었을 때에도 실시간 알림을 받습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587392-41092786-b6c9-4fcd-a3e8-bf476519d5f5.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587394-02371e17-420f-42cf-9d99-e57e3280465e.gif"/>
+
+<br>
+
+### 플레이룸 생성
+- 플레이룸을 생성하기 위해 기존에 업로드된 플레이리스트 정보를 이용할 수 있습니다.
+- 팔로우 한 친구를 초대하고, 플레이룸을 운영할 시간, 공개 여부, 영상 목록 셔플 여부, 최대 참여자 수를 설정합니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587441-5bf6a5bf-1bf0-4910-95c8-089e75ed4817.gif"/>
+
+<br>
+
+### 플레이룸 이용하기
+- 현재 운영중인 플레이룸은 좌측상단에 ONPLAY라고 써있습니다.
+- 참여한 이용자들은 방장이 보는 영상 싱크에 맞춰집니다.
+- 플레이룸에 접속하여 좋아요 표시를 할 수 있고, 이용자들과 채팅을 할 수 있습니다.
+- 플레이룸을 카카오톡 톡방에 공유할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587451-cd504c78-5147-45df-881d-b8d45e766b26.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587467-401548d1-4ef2-4d16-adc6-abb7e97a47de.gif"/>
+
+<br>
+
+### 알림 목록 이용하기
+- 팔로워에 대한 소식, 팔로우 소식 등이 알림 목록에 실시간으로 저장됩니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587397-120e0308-8a4b-4c65-977e-e0991ed5d820.gif"/>
+
+<br>
+
+### 게시글 작성
+- 게시글을 작성할 때 플레이리스트와 플레이룸을 엮어서 업로드할 수 있습니다.
+- 아무것도 엮지 않으면 입력한 내용만 업로드됩니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587371-0aff4235-5232-48d5-9b67-2354dcabd4d0.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587373-100a85f0-bbcd-47e6-b2ce-4f23d6817c42.gif"/>
+
+<br>
+
+### 메인화면 이용하기
+- 메인화면에서 자유롭게 타인이 업로드한 컨텐츠를 탐색할 수 있습니다.
+- 그러다가, 맘에 드는 컨텐츠를 업로드하는 사용자를 발견하면 접속하여 활동 내역을 살펴볼 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587377-2da34425-f76d-4c34-90de-f11606d0b60b.gif"/>
+
+<br>
+
+### 탐색하기
+- 플레이리스트, 플레이룸, 영상 각각에 대하여 전체 목록을 살펴볼 수 있습니다.
+- 현재 유저의 취향에 따라 키워드 버튼이 변화합니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587399-6ca3be70-4f6f-4107-b879-de3bddeb2f56.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587407-4e64cd20-2ed4-4f8c-9ca9-d51d7d7162b2.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587417-01f10449-b4e7-42aa-bd8b-acd5444d4092.gif"/>
+
+<br>
+
+### 검색
+- 현재 실시간 검색어 트렌드가 Top 10위까지 노출됩니다. 클릭하면 검색결과로 이동합니다.
+- 플레이리스트, 플레이룸, 유저닉네임, 영상제목을 검색할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587561-55048bc1-4649-4bb4-a6b3-468d01f3e9e7.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587364-f62396c2-a221-4424-a6ce-f2ef6b9362b9.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587565-4bfb22ef-621b-4df8-b7b7-bd73d324f50d.gif"/>
+
+<br>
+
+### 자신의 프로필 정보
+- 자신의 프로필 화면에서 활동 내역과, 취향 분석 결과 그리고 획득한 뱃지를 확인할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587436-8d94a81a-b287-4d59-99a6-dca905eaf5b5.gif"/>
+
+<br>
+
+### 프로필 정보 변경
+- 설정 탭에서 비밀번호를 변경할 수 있습니다.
+- 프로필 정보 페이지에서 프로필이미지, 닉네임, 자기소개 글을 변경할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587378-146a0843-c95e-4323-a53e-ea3157a846ee.gif"/>
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154591542-7efa6cf5-ff54-40d1-8ed8-1d2682c30ee4.gif"/>
+
+<br>
+
+### 좋아요 표시한 글 보기
+- 설정 페이지에서 좋아요한 플레이리스트, 플레이룸, 게시글 목록을 확인할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587382-e9dcdaf1-e5db-4414-95e1-1230f8f08486.gif"/>
+
+<br>
+
+### 알림관련 설정, 이용약관
+- 실시간 알림이 오는 것이 싫다면 수신 거부를 할 수 있습니다.
+- TUPLI 서비스 개인정보 이용약관, 그리고 서비스 이용약관을 확인할 수 있습니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587385-b06c3afe-c06e-4d9c-8412-60c59e94540d.gif"/>
+
+<br>
+
+### 로그아웃
+- 로그아웃하면 비회원(게스트)로 접속하게됩니다.
+- 비회원 사용자는 좋아요, 댓글, 채팅 등 여러 기능이 제한됩니다.
+
+<img width="30%" src="https://user-images.githubusercontent.com/55949647/154587391-bb7fe4c1-bb9b-4c9f-a6bd-6dba13daadde.gif"/>
