@@ -161,5 +161,23 @@
 ## ERD 설계
 
 <br>
-![Alt text](image.png)
+
+<img src="https://github.com/dreamingbeom/Nahansi/assets/128280944/ba28c2c3-fd64-46ab-bf79-df9c624d1aa6" />
+
+</br>
+
+## API 입력 위치
+```
+Frontend
+카카오맵 : final-pjt-front\front\index.html
+src="//dapi.kakao.com/v2/maps/sdk.js?appkey={api키입력}=services"
+api 레퍼런스 주소 : https://apis.map.kakao.com/web/guide/ JavaScript  키
+
+Backend
+금융감독원 : final-pjt-back\deposits\views.py
+변수명 api_key에 할당
+api 레퍼런스 주소
+- 예금 : https://finlife.fss.or.kr/finlife/api/fdrmDpstApi/list.do?menuNo=700052
+- 적금 : https://finlife.fss.or.kr/finlife/api/fdrmDpstApi/list.do?menuNo=700052
+```
 
